@@ -43,14 +43,14 @@ boxes.forEach((box) => {
         if(turnO){
            box.innerText = "O";
            box.style.color = "green";
-           box.style.backgroundColor = "rgba(0,128,0,0.2)"
+           box.style.backgroundColor = "rgba(0,128,0,0.4)"
            turnMsg.innerText = "Turn: X";
            turnO = false;
         }
         else{
             box.innerText = "X";
             box.style.color = "blue";
-            box.style.backgroundColor = "rgba(0,0,255,0.2)"
+            box.style.backgroundColor = "rgba(0,0,255,0.4)"
             turnMsg.innerText = "Turn: O";
             turnO = true;
         }
@@ -73,9 +73,9 @@ const checkWinner = () => {
                 boxes.forEach((box) => {
                     box.classList.remove("border");
                 });
-                boxes[pattern[0]].style.backgroundColor = "rgba(255,255,0,0.2)";
-                boxes[pattern[1]].style.backgroundColor = "rgba(255,255,0,0.2)";
-                boxes[pattern[2]].style.backgroundColor = "rgba(255,255,0,0.2)";
+                boxes[pattern[0]].style.backgroundColor = "rgba(255,255,0,0.4)";
+                boxes[pattern[1]].style.backgroundColor = "rgba(255,255,0,0.4)";
+                boxes[pattern[2]].style.backgroundColor = "rgba(255,255,0,0.4)";
                 resetBtn.classList.add("hide");
                 turnMsg.classList.add("hide");
                 disable();
@@ -125,4 +125,3 @@ const resetGame = () => {
 
 resetBtn.addEventListener("click", () => {resetGame();});
 newGame.addEventListener("click", () => { resetGame();});
-
