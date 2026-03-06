@@ -112,7 +112,7 @@ const resetGame = () => {
     turnO = true;
     gameStarted = false;
 
-    turnMsg.innerText = "Select Turn First";
+    turnMsg.innerText = "Select First Turn";
     resetBtn.classList.remove("hide");
     turnMsg.classList.remove("hide");
     msgContainer.classList.add("hide");
@@ -125,5 +125,6 @@ const resetGame = () => {
 
 resetBtn.addEventListener("click", () => {resetGame();});
 newGame.addEventListener("click", () => { resetGame();});
+
 
 
