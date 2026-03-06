@@ -12,7 +12,7 @@ h1 {
     padding-left: 1rem;
 }
 .container {
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,3 +102,4 @@ h1 {
 #startX {
     margin: 1rem;
 }
+
