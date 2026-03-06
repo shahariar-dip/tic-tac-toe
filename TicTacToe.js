@@ -43,14 +43,14 @@ boxes.forEach((box) => {
         if(turnO){
            box.innerText = "O";
            box.style.color = "blue";
-           box.style.backgroundColor = "rgba(0,128,0,0.4)"
+           box.style.backgroundColor = "rgba(0,128,0,0.7)"
            turnMsg.innerText = "Turn: X";
            turnO = false;
         }
         else{
             box.innerText = "X";
             box.style.color = "green";
-            box.style.backgroundColor = "rgba(0,0,255,0.4)"
+            box.style.backgroundColor = "rgba(0,0,255,0.7)"
             turnMsg.innerText = "Turn: O";
             turnO = true;
         }
@@ -125,4 +125,5 @@ const resetGame = () => {
 
 resetBtn.addEventListener("click", () => {resetGame();});
 newGame.addEventListener("click", () => { resetGame();});
+
 
