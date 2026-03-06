@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: #bed4cb;
+    background-image: url("tic tac toe.jpg");
     text-align: center;
 }
 h1 {
-    color: rgb(4, 4, 95);
-    padding-top: 3rem;
+    color: aqua;
+    padding-top: 2rem;
 }
 .container {
     height: 70vh;
@@ -18,8 +18,8 @@ h1 {
     
 }
 .game {
-    height: 45vmin;
-    width: 45vmin;
+    height: 55vmin;
+    width: 55vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,8 +30,8 @@ h1 {
     /* box-shadow: 0 0 1rem rgb(56, 56, 56); */
 }
 .box {
-    height: 13vmin;
-    width: 13vmin;
+    height: 17vmin;
+    width: 17vmin;
     border: none;
     border-radius: 0.8rem;
     box-shadow: 0 0 0.85rem rgb(45, 45, 45);
@@ -41,15 +41,16 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 .reset-btn {
-    height: 3rem;
+    height: 2.6rem;
     width: 10rem;
     background-color: black;
     color: aliceblue;
     font-size: 1.25rem;
     border-radius: 1rem;
-    border: none;
+    border: 0.1rem solid red;
 }
 .border:hover {
     border: 0.11rem solid black;
@@ -58,26 +59,45 @@ h1 {
     border: 0.08rem solid white;
 }
 .new-btn {
-    height: 3rem;
+    height: 2.6rem;
     width: 10rem;
     background-color: black;
     color: aliceblue;
     font-size: 1.25rem;
     border-radius: 1rem;
-    border: none;
+    border: 0.1rem solid red;
 }
 #msg {
-   color: rgb(19, 101, 3); 
+   color: green; 
    font-size: 5vmin;
 }
 .msg-container {
-    height: 95vmin;
+    height: 20vmin;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
+}
+#turn {
+    font-size: 1.5rem;
+    color: red;
 }
 .hide {
     display: none;
+}
+.turn {
+    height: 2.5rem;
+    width: 9.6rem;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: 0.1rem solid red;
+}
+#startO {
+    margin: 1rem;
+}
+#startX {
+    margin: 1rem;
 }
