@@ -9,30 +9,30 @@ body{
 h1 {
     color: aqua;
     padding-top: 1.5rem;
-    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 .container {
-    height: 65vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 .game {
-    height: 55vmin;
-    width: 55vmin;
+    height: 65vmin;
+    width: 65vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0.5vmin;
+    gap: 1vmin;
     /* background-color: rgb(210, 210, 255); */
     border-radius: 1.5rem;
     /* box-shadow: 0 0 1rem rgb(56, 56, 56); */
 }
 .box {
-    height: 17vmin;
-    width: 17vmin;
+    height: 20vmin;
+    width: 20vmin;
     border: none;
     border-radius: 0.8rem;
     box-shadow: 0 0 0.85rem rgb(45, 45, 45);
@@ -102,4 +102,3 @@ h1 {
 #startX {
     margin: 1rem;
 }
-
