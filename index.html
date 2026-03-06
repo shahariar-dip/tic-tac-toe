@@ -7,12 +7,17 @@
     <title>Dip's Tic Tac Toe</title>
 </head>
 <body>
+    <h1>Dip's Tic Tac Toe</h1>
     <div class="msg-container hide">
         <p id="msg">Winner</p>
         <button class="new-btn borde">New Game</button>
     </div>
     <main>
-        <h1>Dip's Tic Tac Toe</h1>
+        <div class="turn-select">
+            <button id="startX" class="turn borde">Start With X</button>
+            <button id="startO" class="turn borde">Start With O</button>
+        </div>
+        <p id="turn">Select First Turn</p>
         <div class="container">
           <div class="game">
               <button class="box border"></button>
@@ -30,5 +35,4 @@
     </main>
     <script src="TicTacToe.js"></script>
 </body>
-
 </html>
